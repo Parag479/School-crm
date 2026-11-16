@@ -1,12 +1,13 @@
 # EduManage School ERP — World-Class School Website & Management CRM
 
-[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel%20Deployment-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://school-crm.vercel.app)
+[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-school--crm--parag479.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://school-crm-parag479.vercel.app)
 [![React 18](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Three.js](https://img.shields.io/badge/Three.js-3D%20Book%20Engine-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%203.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
-> **Live Website:** [https://school-crm.vercel.app](https://school-crm.vercel.app) *(or your deployed Vercel domain)*  
+> **Official Live Website:** [https://school-crm-parag479.vercel.app](https://school-crm-parag479.vercel.app)  
+> **Deployment Mirror:** [https://frontend-umber-nine-98.vercel.app](https://frontend-umber-nine-98.vercel.app)  
 > **GitHub Repository:** [https://github.com/Parag479/School-crm](https://github.com/Parag479/School-crm)
 
 ---
