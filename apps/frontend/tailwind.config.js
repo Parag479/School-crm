@@ -1,0 +1,83 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        navy: {
+          DEFAULT: '#0B132B',
+          950: '#060B18',
+          900: '#0B132B',
+          800: '#111D3E',
+          700: '#182952',
+          600: '#23386C',
+        },
+        gold: {
+          DEFAULT: '#C5A880',
+          50: '#FCFBF9',
+          100: '#F7F3EC',
+          200: '#EDE4D6',
+          300: '#DFD1BD',
+          400: '#D2BDA0',
+          500: '#C5A880',
+          600: '#B08E60',
+          700: '#8E6E41',
+          800: '#6D502B',
+        },
+        ivory: {
+          DEFAULT: '#FAF8F5',
+          50: '#FEFCFA',
+          100: '#FAF8F5',
+          200: '#F2ECE2',
+          300: '#E6DC run-test',
+        },
+        primary: {
+          DEFAULT: '#1E293B',
+          50: '#F8FAFC',
+          100: '#F1F5F9',
+          200: '#E2E8F0',
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155',
+          800: '#1E293B',
+          900: '#0F172A',
+        },
+        secondary: {
+          DEFAULT: '#64748B',
+          50: '#F8FAFC',
+          100: '#F1F5F9',
+          200: '#E2E8F0',
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155',
+          800: '#1E293B',
+          900: '#0F172A',
+        },
+        appBg: '#F8FAFC',
+        appText: '#0F172A',
+        appBorder: '#E2E8F0',
+        success: '#16A34A',
+        warning: '#F59E0B',
+        danger: '#EF4444',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'Cambria', 'serif'],
+      },
+      boxShadow: {
+        card: '0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05)',
+        'card-hover': '0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.05)',
+        elevated: '0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.05)',
+      },
+    },
+  },
+  plugins: [],
+}
+
