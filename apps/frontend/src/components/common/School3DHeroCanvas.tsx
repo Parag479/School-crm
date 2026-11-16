@@ -71,32 +71,32 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
     // Materials
     // Hardcover Material: Royal Deep Navy Leather
     const coverMat = new THREE.MeshStandardMaterial({
-      color: 0x0a1435,
-      roughness: 0.35,
-      metalness: 0.2,
+      color: 0x071126,
+      roughness: 0.3,
+      metalness: 0.25,
     });
 
-    // Gold Foil Trim & Spine Material
-    const goldMat = new THREE.MeshStandardMaterial({
-      color: 0xd4af37,
-      roughness: 0.25,
-      metalness: 0.9,
-      emissive: 0x997523,
-      emissiveIntensity: 0.25,
+    // Royal Blue Metallic Trim & Spine Material
+    const royalBlueTrimMat = new THREE.MeshStandardMaterial({
+      color: 0x2563eb,
+      roughness: 0.2,
+      metalness: 0.85,
+      emissive: 0x1d4ed8,
+      emissiveIntensity: 0.35,
     });
 
-    // Paper Material (Fine Warm Ivory Archival Stock)
+    // Paper Material (Fine Archival Crisp White Stock)
     const paperMat = new THREE.MeshStandardMaterial({
-      color: 0xfaf6ed,
+      color: 0xf8fafc,
       roughness: 0.85,
       metalness: 0.05,
     });
 
-    // Page Edge Gilding (Gold gilded edges)
+    // Page Edge Gilding (Sapphire Blue gilded edges)
     const gildedEdgeMat = new THREE.MeshStandardMaterial({
-      color: 0xc59b27,
+      color: 0x3b82f6,
       roughness: 0.3,
-      metalness: 0.85,
+      metalness: 0.75,
     });
 
     const bookWidth = 4.2;
@@ -112,7 +112,7 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
 
     // Left Cover Gold Edge Accent
     const leftGoldTrimGeo = new THREE.BoxGeometry(bookWidth * 0.98, 0.02, bookLength * 0.98);
-    const leftGoldTrim = new THREE.Mesh(leftGoldTrimGeo, goldMat);
+    const leftGoldTrim = new THREE.Mesh(leftGoldTrimGeo, royalBlueTrimMat);
     leftGoldTrim.position.set(-bookWidth / 2 - 0.1, -0.05, 0);
     leftGoldTrim.rotation.z = 0.18;
     bookGroup.add(leftGoldTrim);
@@ -125,14 +125,14 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
     bookGroup.add(rightCover);
 
     // Right Cover Gold Edge Accent
-    const rightGoldTrim = new THREE.Mesh(leftGoldTrimGeo, goldMat);
+    const rightGoldTrim = new THREE.Mesh(leftGoldTrimGeo, royalBlueTrimMat);
     rightGoldTrim.position.set(bookWidth / 2 + 0.1, -0.05, 0);
     rightGoldTrim.rotation.z = -0.18;
     bookGroup.add(rightGoldTrim);
 
     // C. Center Spine (Curved Cylinder Segment)
     const spineGeo = new THREE.CylinderGeometry(0.35, 0.35, bookLength, 16, 1, false, 0, Math.PI);
-    const spine = new THREE.Mesh(spineGeo, goldMat);
+    const spine = new THREE.Mesh(spineGeo, royalBlueTrimMat);
     spine.rotation.x = Math.PI / 2;
     spine.rotation.z = Math.PI;
     spine.position.set(0, -0.38, 0);
@@ -204,11 +204,11 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
     ]);
     const ribbonGeo = new THREE.TubeGeometry(ribbonCurve, 32, 0.12, 8, false);
     const ribbonMat = new THREE.MeshStandardMaterial({
-      color: 0xd4af37,
+      color: 0x3b82f6,
       roughness: 0.2,
       metalness: 0.85,
-      emissive: 0x997523,
-      emissiveIntensity: 0.35,
+      emissive: 0x1d4ed8,
+      emissiveIntensity: 0.45,
     });
     const ribbon = new THREE.Mesh(ribbonGeo, ribbonMat);
     bookGroup.add(ribbon);
@@ -239,13 +239,13 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
     skull.position.set(0, -0.38, 0);
     capGroup.add(skull);
 
-    // Golden Button on Cap Center
+    // Button on Cap Center
     const btnGeo = new THREE.SphereGeometry(0.12, 16, 16);
-    const btn = new THREE.Mesh(btnGeo, goldMat);
+    const btn = new THREE.Mesh(btnGeo, royalBlueTrimMat);
     btn.position.set(0, 0.08, 0);
     capGroup.add(btn);
 
-    // Hanging Golden Tassel
+    // Hanging Tassel
     const tasselCurve = new THREE.CatmullRomCurve3([
       new THREE.Vector3(0, 0.08, 0),
       new THREE.Vector3(0.7, 0.06, 0.7),
@@ -253,7 +253,7 @@ export const School3DHeroCanvas: React.FC<{ className?: string }> = ({ className
       new THREE.Vector3(1.15, -1.0, 1.15),
     ]);
     const tasselGeo = new THREE.TubeGeometry(tasselCurve, 16, 0.03, 8, false);
-    const tassel = new THREE.Mesh(tasselGeo, goldMat);
+    const tassel = new THREE.Mesh(tasselGeo, royalBlueTrimMat);
     capGroup.add(tassel);
 
     // ----------------------------------------------------

@@ -39,11 +39,11 @@ export const Admissions: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#2563EB] selection:text-white">
       {/* Editorial Header Banner */}
       <section className="bg-[#070C1A] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#2563EB]/30 backdrop-blur-md">
             Academic Session 2026–2027
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-white">
@@ -58,7 +58,7 @@ export const Admissions: React.FC = () => {
       {/* 4-Step Process Continuum */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+          <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
             Step-by-Step Procedure
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B]">
@@ -90,7 +90,7 @@ export const Admissions: React.FC = () => {
             },
           ].map((item, i) => (
             <div key={i} className="bg-white p-7 rounded-3xl border border-[#EDE4D6] shadow-sm space-y-3 relative">
-              <span className="font-serif text-3xl font-bold text-[#C5A880] block">{item.step}</span>
+              <span className="font-serif text-3xl font-bold text-[#2563EB] block">{item.step}</span>
               <h3 className="font-serif text-base font-bold text-[#0B132B]">{item.title}</h3>
               <p className="text-xs text-slate-600 leading-relaxed font-normal">{item.desc}</p>
             </div>
@@ -100,7 +100,7 @@ export const Admissions: React.FC = () => {
         <div className="text-center pt-8">
           <Link
             to="/online-enquiry"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#C5A880] transition-all shadow"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#2563EB] transition-all shadow"
           >
             <span>Proceed to Online Admission Enquiry</span>
             <ArrowRight className="w-4 h-4" />
@@ -112,7 +112,7 @@ export const Admissions: React.FC = () => {
       <section className="bg-white py-16 border-y border-[#EDE4D6]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-2">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41]">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF]">
               Frequently Asked Questions
             </span>
             <h2 className="text-3xl font-serif font-bold text-[#0B132B]">Everything Parents Want to Know</h2>
@@ -126,11 +126,11 @@ export const Admissions: React.FC = () => {
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                  className="w-full p-5 text-left flex items-center justify-between font-serif font-bold text-sm text-[#0B132B] hover:text-[#8E6E41]"
+                  className="w-full p-5 text-left flex items-center justify-between font-serif font-bold text-sm text-[#0B132B] hover:text-[#1E40AF]"
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-4 h-4 text-[#C5A880] transition-transform duration-200 ${
+                    className={`w-4 h-4 text-[#2563EB] transition-transform duration-200 ${
                       openFaq === idx ? 'rotate-180' : ''
                     }`}
                   />

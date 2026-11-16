@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 export const Academics: React.FC = () => {
   return (
-    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#2563EB] selection:text-white">
       {/* Editorial Header Banner */}
       <section className="bg-[#070C1A] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#2563EB]/30 backdrop-blur-md">
             CBSE Curriculum & NEP 2020 Aligned
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-white">
@@ -24,7 +24,7 @@ export const Academics: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-6 space-y-5">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
               Pedagogical Framework
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B] tracking-tight leading-snug">
@@ -41,7 +41,7 @@ export const Academics: React.FC = () => {
                 '1:16 faculty-student ratio ensuring individualized academic guidance and care.',
               ].map((pt, idx) => (
                 <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-700">
-                  <CheckCircle className="w-4 h-4 text-[#8E6E41] flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#1E40AF] flex-shrink-0 mt-0.5" />
                   <span>{pt}</span>
                 </div>
               ))}
@@ -64,7 +64,7 @@ export const Academics: React.FC = () => {
       <section className="bg-white py-16 border-y border-[#EDE4D6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
               Developmental Stages
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B]">
@@ -100,7 +100,7 @@ export const Academics: React.FC = () => {
               },
             ].map((wing, i) => (
               <div key={i} className="bg-[#FAF8F5] p-8 rounded-3xl border border-[#EDE4D6] space-y-3">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#8E6E41] bg-white px-3 py-1 rounded-full border border-[#EDE4D6]">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E40AF] bg-white px-3 py-1 rounded-full border border-[#EDE4D6]">
                   {wing.subtitle}
                 </span>
                 <h3 className="font-serif text-xl font-bold text-[#0B132B]">{wing.title}</h3>
@@ -117,7 +117,7 @@ export const Academics: React.FC = () => {
 
       {/* Admissions Call to Action */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#0B132B] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#C5A880]/30">
+        <div className="bg-[#0B132B] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#2563EB]/30">
           <div className="space-y-2 text-center md:text-left">
             <h3 className="font-serif text-2xl font-bold">Enroll in the 2026–2027 Academic Session</h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-lg font-light">
@@ -126,7 +126,7 @@ export const Academics: React.FC = () => {
           </div>
           <Link
             to="/online-enquiry"
-            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#C5A880] transition-all shadow whitespace-nowrap"
+            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#2563EB] transition-all shadow whitespace-nowrap"
           >
             Apply Online for Admission
           </Link>

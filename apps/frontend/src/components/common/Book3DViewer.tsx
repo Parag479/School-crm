@@ -141,12 +141,12 @@ export const Book3DViewer: React.FC = () => {
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#BF9827] text-xs font-semibold uppercase tracking-widest">
-          <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-600 text-xs font-semibold uppercase tracking-widest">
+          <Sparkles className="w-3.5 h-3.5 text-blue-600" />
           <span>Interactive 3D Experience</span>
         </div>
         <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#050B18] tracking-tight">
-          Explore Our <span className="italic text-[#BF9827]">Academic Prospectus</span>
+          Explore Our <span className="italic text-blue-600">Academic Prospectus</span>
         </h2>
         <p className="text-slate-600 text-sm sm:text-base font-light">
           Flip through our official school handbook in real-time 3D. Click the navigation arrows or page corners to turn pages.
@@ -165,13 +165,13 @@ export const Book3DViewer: React.FC = () => {
           }`}
           style={{ transformStyle: 'preserve-3d' }}
         >
-          {/* Gold Embossed Spine Header */}
-          <div className="flex items-center justify-between pb-3 px-2 border-b border-[#D4AF37]/30 text-[#D4AF37] text-xs font-serif tracking-widest">
+          {/* Embossed Spine Header */}
+          <div className="flex items-center justify-between pb-3 px-2 border-b border-blue-500/30 text-blue-400 text-xs font-serif tracking-widest">
             <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+              <BookOpen className="w-4 h-4 text-blue-400" />
               <span>GREENWOOD INTERNATIONAL ACADEMY • OFFICIAL PROSPECTUS 2026–27</span>
             </div>
-            <span className="hidden sm:inline-block font-mono text-[11px] text-[#D4AF37]/80">
+            <span className="hidden sm:inline-block font-mono text-[11px] text-blue-400/80">
               SPREAD {currentSpread + 1} OF {totalSpreads}
             </span>
           </div>
@@ -287,7 +287,7 @@ export const Book3DViewer: React.FC = () => {
                 {currentSpread === totalSpreads - 1 ? (
                   <Link
                     to="/admissions/enquiry"
-                    className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#0A1435] text-[#D4AF37] hover:bg-[#111D3E] font-medium text-xs tracking-wider uppercase transition shadow-md group"
+                    className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs tracking-wider uppercase transition shadow-md group"
                   >
                     <span>Proceed to Online Admission</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -309,7 +309,7 @@ export const Book3DViewer: React.FC = () => {
               className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-medium uppercase tracking-wider transition ${
                 currentSpread === 0
                   ? 'opacity-40 cursor-not-allowed text-slate-400 bg-white/5'
-                  : 'bg-white/10 hover:bg-white/20 text-[#D4AF37] border border-[#D4AF37]/30 shadow'
+                  : 'bg-white/10 hover:bg-white/20 text-blue-400 border border-blue-500/30 shadow'
               }`}
             >
               <ChevronLeft className="w-4 h-4" />
@@ -323,7 +323,7 @@ export const Book3DViewer: React.FC = () => {
                   key={idx}
                   onClick={() => !isFlipping && setCurrentSpread(idx)}
                   className={`h-2 rounded-full transition-all duration-300 ${
-                    idx === currentSpread ? 'w-8 bg-[#D4AF37]' : 'w-2 bg-white/30 hover:bg-white/50'
+                    idx === currentSpread ? 'w-8 bg-blue-500' : 'w-2 bg-white/30 hover:bg-white/50'
                   }`}
                   aria-label={`Go to spread ${idx + 1}`}
                 />
@@ -336,7 +336,7 @@ export const Book3DViewer: React.FC = () => {
               className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-medium uppercase tracking-wider transition ${
                 currentSpread === totalSpreads - 1
                   ? 'opacity-40 cursor-not-allowed text-slate-400 bg-white/5'
-                  : 'bg-[#D4AF37] hover:bg-[#BF9827] text-[#050B18] font-bold shadow-lg shadow-[#D4AF37]/20'
+                  : 'bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-lg shadow-blue-600/30'
               }`}
             >
               <span>Next Page</span>

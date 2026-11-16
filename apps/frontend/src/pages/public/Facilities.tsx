@@ -50,11 +50,11 @@ export const Facilities: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="space-y-20 pb-20 bg-[#FAF8F5] text-[#0F172A] selection:bg-[#2563EB] selection:text-white">
       {/* Editorial Header Banner */}
       <section className="bg-[#070C1A] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#2563EB]/30 backdrop-blur-md">
             World-Class 12-Acre Campus
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-white">
@@ -86,7 +86,7 @@ export const Facilities: React.FC = () => {
                   </div>
 
                   <div className="p-6 space-y-2">
-                    <h3 className="font-serif text-lg font-bold text-[#0B132B] group-hover:text-[#8E6E41] transition-colors">
+                    <h3 className="font-serif text-lg font-bold text-[#0B132B] group-hover:text-[#1E40AF] transition-colors">
                       {f.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">{f.desc}</p>
@@ -100,7 +100,7 @@ export const Facilities: React.FC = () => {
 
       {/* Campus Tour CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#0B132B] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#C5A880]/30">
+        <div className="bg-[#0B132B] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#2563EB]/30">
           <div className="space-y-2 text-center md:text-left">
             <h3 className="font-serif text-2xl font-bold">Schedule an In-Person Campus Walkthrough</h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-lg font-light">
@@ -109,7 +109,7 @@ export const Facilities: React.FC = () => {
           </div>
           <Link
             to="/online-enquiry"
-            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#C5A880] transition-all shadow whitespace-nowrap"
+            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-[#070C1A] font-serif font-bold text-xs tracking-wider uppercase hover:from-[#D4AF37] hover:to-[#2563EB] transition-all shadow whitespace-nowrap"
           >
             Book Guided Campus Tour
           </Link>

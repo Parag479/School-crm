@@ -63,7 +63,7 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="space-y-24 sm:space-y-32 pb-20 overflow-hidden bg-[#FAF9F5] text-[#050B18] selection:bg-[#D4AF37] selection:text-[#050B18]">
+    <div className="space-y-24 sm:space-y-32 pb-20 overflow-hidden bg-[#FAF9F5] text-[#050B18] selection:bg-[#D4AF37] selection:text-white">
       {/* ========================================================
           1. HERO SECTION: "Shaping Minds. Inspiring Futures."
           With Interactive 3D Open Academic Book Experience
@@ -90,15 +90,15 @@ export const Home: React.FC = () => {
             {/* Left 7 Columns: Editorial Headline & Luxury Accolades */}
             <div className="lg:col-span-7 space-y-7 text-left">
               {/* Accreditation Emblem */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#D4AF37] text-[11px] font-bold uppercase tracking-[0.22em] border border-[#D4AF37]/35 backdrop-blur-md shadow-lg">
-                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-600/20 text-sky-300 text-[11px] font-bold uppercase tracking-[0.22em] border border-blue-500/40 backdrop-blur-md shadow-lg">
+                <Sparkles className="w-3.5 h-3.5 text-sky-400" />
                 <span>Admissions 2026–2027 • CBSE Affiliation No. 2130842</span>
               </div>
 
               {/* Master Headline: Shaping Minds. Inspiring Futures. */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.08]">
                 Shaping Minds.{' '}
-                <span className="italic font-normal bg-gradient-to-r from-[#F5E6C4] via-[#D4AF37] to-[#BF9827] bg-clip-text text-transparent">
+                <span className="italic font-normal bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300 bg-clip-text text-transparent">
                   Inspiring Futures.
                 </span>
               </h1>
@@ -108,11 +108,11 @@ export const Home: React.FC = () => {
                 An institution of rare distinction where academic rigor meets timeless values, unlocking each student’s highest potential on the global stage.
               </p>
 
-              {/* Luxury CTA Buttons */}
+              {/* Royal Blue CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                 <Link
                   to="/online-enquiry"
-                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#BF9827] to-[#997523] text-[#050B18] font-serif font-bold text-sm tracking-wide shadow-xl shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:from-[#E4BF6E] hover:to-[#D4AF37] transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white font-serif font-bold text-sm tracking-wide shadow-xl shadow-blue-600/30 hover:shadow-blue-600/50 hover:from-blue-500 hover:to-indigo-500 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
                 >
                   <span>Apply for Admission</span>
                   <ArrowRight className="w-4 h-4" />
@@ -120,9 +120,9 @@ export const Home: React.FC = () => {
 
                 <Link
                   to="/about"
-                  className="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-serif font-semibold text-sm tracking-wide backdrop-blur-md border border-white/20 hover:border-[#D4AF37]/50 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-serif font-semibold text-sm tracking-wide backdrop-blur-md border border-white/20 hover:border-blue-400/50 transition-all text-center flex items-center justify-center gap-2"
                 >
-                  <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+                  <BookOpen className="w-4 h-4 text-sky-400" />
                   <span>Discover Our Legacy</span>
                 </Link>
               </div>
@@ -130,7 +130,7 @@ export const Home: React.FC = () => {
               {/* Institutional Accolade Plaque */}
               <div className="pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
                 <div>
-                  <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">28+ Years</p>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-sky-400">28+ Years</p>
                   <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">Excellence Legacy</p>
                 </div>
                 <div>
@@ -138,7 +138,7 @@ export const Home: React.FC = () => {
                   <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">CBSE Distinction</p>
                 </div>
                 <div>
-                  <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">1:12</p>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-sky-400">1:12</p>
                   <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">Faculty Mentorship</p>
                 </div>
                 <div>
@@ -150,21 +150,21 @@ export const Home: React.FC = () => {
 
             {/* Right 5 Columns: Interactive 3D Open Academic Book Viewport */}
             <div className="lg:col-span-5 relative flex items-center justify-center">
-              <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-[#D4AF37]/30 backdrop-blur-xl p-2 sm:p-4 shadow-2xl overflow-hidden group">
+              <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-blue-500/30 backdrop-blur-xl p-2 sm:p-4 shadow-2xl overflow-hidden group">
                 {/* 3D Book Interactive Canvas */}
                 <School3DHeroCanvas className="w-full h-full" />
 
                 {/* Floating Interactive Badge */}
                 <div className="absolute top-4 left-4 z-20 pointer-events-none">
-                  <div className="px-3 py-1.5 rounded-full bg-[#050B18]/80 border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] font-bold uppercase tracking-wider backdrop-blur-md flex items-center gap-1.5 shadow-md">
-                    <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
+                  <div className="px-3 py-1.5 rounded-full bg-[#050B18]/80 border border-blue-500/40 text-sky-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md flex items-center gap-1.5 shadow-md">
+                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                     <span>Interactive 3D Book • Move Cursor to Tilt</span>
                   </div>
                 </div>
 
                 {/* Bottom Stats Ribbon */}
                 <div className="absolute bottom-4 left-4 right-4 z-20 pointer-events-none flex items-center justify-between px-4 py-2 rounded-xl bg-[#050B18]/70 border border-white/10 backdrop-blur-md text-[11px] text-slate-300">
-                  <span className="flex items-center gap-1.5 text-[#D4AF37] font-semibold">
+                  <span className="flex items-center gap-1.5 text-sky-400 font-semibold">
                     <Award className="w-3.5 h-3.5" />
                     CBSE & Cambridge
                   </span>
@@ -210,7 +210,7 @@ export const Home: React.FC = () => {
               <p className="font-serif text-xs italic text-slate-700 leading-relaxed">
                 "We do not merely prepare students for university examinations; we prepare them to navigate and lead life."
               </p>
-              <p className="text-[10px] font-bold uppercase tracking-wider text-[#8E6E41] mt-2">
+              <p className="text-[10px] font-bold uppercase tracking-wider text-[#1E40AF] mt-2">
                 — Greenwood Academic Charter
               </p>
             </div>
@@ -218,7 +218,7 @@ export const Home: React.FC = () => {
 
           {/* Editorial Text Content */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
               Welcome to Greenwood
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#0B132B] tracking-tight leading-[1.15]">
@@ -232,7 +232,7 @@ export const Home: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-xl bg-white border border-[#EDE4D6]">
                 <h4 className="font-serif text-sm font-bold text-[#0B132B] flex items-center gap-2 mb-1">
-                  <span className="w-2 h-2 rounded-full bg-[#C5A880]"></span>
+                  <span className="w-2 h-2 rounded-full bg-[#2563EB]"></span>
                   Our Educational Vision
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
@@ -254,7 +254,7 @@ export const Home: React.FC = () => {
             <div className="pt-2 flex items-center gap-6">
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 text-xs font-serif font-bold text-[#8E6E41] hover:text-[#0B132B] tracking-wider uppercase border-b border-[#C5A880] pb-1 transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-serif font-bold text-[#1E40AF] hover:text-[#0B132B] tracking-wider uppercase border-b border-[#2563EB] pb-1 transition-colors"
               >
                 <span>Read Full Institutional History</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -277,7 +277,7 @@ export const Home: React.FC = () => {
       <section className="bg-white py-20 border-y border-[#EDE4D6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
               Curriculum Continuum
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B] tracking-tight">
@@ -330,7 +330,7 @@ export const Home: React.FC = () => {
 
                   <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                     <div>
-                      <h3 className="font-serif text-lg font-bold text-[#0B132B] group-hover:text-[#8E6E41] transition-colors">
+                      <h3 className="font-serif text-lg font-bold text-[#0B132B] group-hover:text-[#1E40AF] transition-colors">
                         {program.stage}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed mt-2">{program.desc}</p>
@@ -339,7 +339,7 @@ export const Home: React.FC = () => {
                     <div className="pt-4 border-t border-[#EDE4D6]">
                       <Link
                         to="/academics"
-                        className="text-xs font-serif font-bold text-[#8E6E41] hover:text-[#0B132B] flex items-center justify-between"
+                        className="text-xs font-serif font-bold text-[#1E40AF] hover:text-[#0B132B] flex items-center justify-between"
                       >
                         <span>View Academic Plan</span>
                         <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -358,7 +358,7 @@ export const Home: React.FC = () => {
          ======================================================== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+          <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
             The Greenwood Distinction
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B] tracking-tight">
@@ -404,9 +404,9 @@ export const Home: React.FC = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-7 border border-[#EDE4D6] shadow-sm hover:shadow-md hover:border-[#C5A880] transition-all space-y-3"
+              className="bg-white rounded-2xl p-7 border border-[#EDE4D6] shadow-sm hover:shadow-md hover:border-[#2563EB] transition-all space-y-3"
             >
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#8E6E41] bg-[#FAF8F5] px-2.5 py-1 rounded border border-[#EDE4D6]">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E40AF] bg-[#FAF8F5] px-2.5 py-1 rounded border border-[#EDE4D6]">
                 {item.badge}
               </span>
               <h3 className="font-serif text-lg font-bold text-[#0B132B]">{item.title}</h3>
@@ -423,7 +423,7 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
             <div>
-              <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+              <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
                 World-Class Infrastructure
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B] tracking-tight mt-1">
@@ -432,7 +432,7 @@ export const Home: React.FC = () => {
             </div>
             <Link
               to="/facilities"
-              className="text-xs font-serif font-bold text-[#8E6E41] hover:text-[#0B132B] flex items-center gap-1 uppercase tracking-wider border-b border-[#C5A880] pb-0.5"
+              className="text-xs font-serif font-bold text-[#1E40AF] hover:text-[#0B132B] flex items-center gap-1 uppercase tracking-wider border-b border-[#2563EB] pb-0.5"
             >
               <span>Explore All Facilities</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -544,13 +544,13 @@ export const Home: React.FC = () => {
             </div>
             <div className="mt-4">
               <h4 className="font-serif text-lg font-bold text-[#0B132B]">Dr. Sunita Sharma</h4>
-              <p className="text-xs font-semibold text-[#8E6E41]">Principal & Director of Academics</p>
+              <p className="text-xs font-semibold text-[#1E40AF]">Principal & Director of Academics</p>
               <p className="text-[11px] text-slate-500">Ph.D. in Educational Pedagogy, M.Ed., M.Sc.</p>
             </div>
           </div>
 
           <div className="md:col-span-7 space-y-5">
-            <div className="flex items-center gap-2 text-[#8E6E41]">
+            <div className="flex items-center gap-2 text-[#1E40AF]">
               <Quote className="w-8 h-8 opacity-40 rotate-180" />
               <span className="text-xs font-serif font-bold uppercase tracking-[0.2em]">
                 From the Principal's Desk
@@ -568,7 +568,7 @@ export const Home: React.FC = () => {
             <div className="pt-2">
               <Link
                 to="/principal-message"
-                className="inline-flex items-center gap-2 text-xs font-serif font-bold text-[#8E6E41] hover:text-[#0B132B] uppercase tracking-wider border-b border-[#C5A880] pb-1 transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-serif font-bold text-[#1E40AF] hover:text-[#0B132B] uppercase tracking-wider border-b border-[#2563EB] pb-1 transition-colors"
               >
                 <span>Read Full Principal's Welcome</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -615,7 +615,7 @@ export const Home: React.FC = () => {
             ].map((life, i) => (
               <div
                 key={i}
-                className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-xl group hover:border-[#C5A880]/50 transition-all flex flex-col justify-between"
+                className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-xl group hover:border-[#2563EB]/50 transition-all flex flex-col justify-between"
               >
                 <div className="h-48 overflow-hidden relative">
                   <img
@@ -645,10 +645,10 @@ export const Home: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="flex items-center justify-between border-b border-[#EDE4D6] pb-3">
               <div>
-                <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41]">Headlines</span>
+                <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF]">Headlines</span>
                 <h3 className="text-2xl font-serif font-bold text-[#0B132B]">Institutional News & Updates</h3>
               </div>
-              <Link to="/news" className="text-xs font-serif font-bold text-[#8E6E41] hover:underline uppercase tracking-wider">
+              <Link to="/news" className="text-xs font-serif font-bold text-[#1E40AF] hover:underline uppercase tracking-wider">
                 Full Press Archive →
               </Link>
             </div>
@@ -667,14 +667,14 @@ export const Home: React.FC = () => {
                     />
                   )}
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#8E6E41]">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E40AF]">
                       {new Date(n.publishedDate || Date.now()).toLocaleDateString('en-IN', {
                         day: 'numeric',
                         month: 'short',
                         year: 'numeric',
                       })}
                     </span>
-                    <h4 className="font-serif text-base font-bold text-[#0B132B] group-hover:text-[#8E6E41] transition-colors">
+                    <h4 className="font-serif text-base font-bold text-[#0B132B] group-hover:text-[#1E40AF] transition-colors">
                       <Link to="/news">{n.title}</Link>
                     </h4>
                     <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">{n.excerpt}</p>
@@ -688,10 +688,10 @@ export const Home: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center justify-between border-b border-[#EDE4D6] pb-3">
               <div>
-                <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41]">Calendar</span>
+                <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF]">Calendar</span>
                 <h3 className="text-2xl font-serif font-bold text-[#0B132B]">Upcoming Calendar</h3>
               </div>
-              <Link to="/events" className="text-xs font-serif font-bold text-[#8E6E41] hover:underline uppercase tracking-wider">
+              <Link to="/events" className="text-xs font-serif font-bold text-[#1E40AF] hover:underline uppercase tracking-wider">
                 View Calendar →
               </Link>
             </div>
@@ -700,10 +700,10 @@ export const Home: React.FC = () => {
               {events.slice(0, 3).map((e: any) => (
                 <div
                   key={e.id}
-                  className="bg-white rounded-2xl border border-[#EDE4D6] p-4 shadow-sm hover:border-[#C5A880] transition-all flex items-start gap-4"
+                  className="bg-white rounded-2xl border border-[#EDE4D6] p-4 shadow-sm hover:border-[#2563EB] transition-all flex items-start gap-4"
                 >
                   <div className="w-14 h-14 rounded-xl bg-[#FAF8F5] text-[#0B132B] flex flex-col items-center justify-center flex-shrink-0 border border-[#EDE4D6] font-serif font-bold">
-                    <span className="text-[9px] uppercase tracking-wider text-[#8E6E41]">
+                    <span className="text-[9px] uppercase tracking-wider text-[#1E40AF]">
                       {new Date(e.startDate || Date.now()).toLocaleString('en-US', { month: 'short' })}
                     </span>
                     <span className="text-lg leading-none">{new Date(e.startDate || Date.now()).getDate()}</span>
@@ -712,7 +712,7 @@ export const Home: React.FC = () => {
                     <h4 className="font-serif text-sm font-bold text-[#0B132B]">{e.title}</h4>
                     <p className="text-xs text-slate-500 mt-1 line-clamp-1">{e.description}</p>
                     <p className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
-                      <MapPin className="w-3 h-3 text-[#8E6E41]" />
+                      <MapPin className="w-3 h-3 text-[#1E40AF]" />
                       <span>{e.location || 'School Campus'}</span>
                     </p>
                   </div>
@@ -729,7 +729,7 @@ export const Home: React.FC = () => {
       <section className="bg-white py-20 border-y border-[#EDE4D6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#8E6E41] block">
+            <span className="text-xs font-serif font-bold uppercase tracking-[0.2em] text-[#1E40AF] block">
               Voices of Trust
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#0B132B] tracking-tight">
@@ -766,9 +766,9 @@ export const Home: React.FC = () => {
                 className="bg-[#FAF8F5] rounded-2xl border border-[#EDE4D6] p-8 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center gap-1 text-[#C5A880] mb-4">
+                  <div className="flex items-center gap-1 text-[#2563EB] mb-4">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#C5A880]" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-[#2563EB]" />
                     ))}
                   </div>
                   <p className="font-serif text-sm text-slate-700 leading-relaxed italic mb-6">"{t.quote}"</p>
@@ -778,7 +778,7 @@ export const Home: React.FC = () => {
                   <img
                     src={t.avatar}
                     alt={t.author}
-                    className="w-11 h-11 rounded-full object-cover border border-[#C5A880]"
+                    className="w-11 h-11 rounded-full object-cover border border-[#2563EB]"
                   />
                   <div>
                     <h4 className="font-serif text-sm font-bold text-[#0B132B]">{t.author}</h4>
@@ -795,7 +795,7 @@ export const Home: React.FC = () => {
           SECTION I: Admissions CTA (Full-Width Luxury Banner)
          ======================================================== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-[#0B132B] text-white p-8 sm:p-14 shadow-2xl relative overflow-hidden border border-[#C5A880]/40">
+        <div className="rounded-3xl bg-[#0B132B] text-white p-8 sm:p-14 shadow-2xl relative overflow-hidden border border-[#2563EB]/40">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             <div className="lg:col-span-8 space-y-4">
               <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] bg-white/10 text-[#D4AF37] px-3.5 py-1 rounded-full border border-white/15">
@@ -810,7 +810,7 @@ export const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Link
                   to="/online-enquiry"
-                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] text-[#070C1A] font-serif font-bold text-sm tracking-wide shadow-lg hover:from-[#D4AF37] hover:to-[#C5A880] transition-all text-center"
+                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-[#070C1A] font-serif font-bold text-sm tracking-wide shadow-lg hover:from-[#D4AF37] hover:to-[#2563EB] transition-all text-center"
                 >
                   Apply Online for Admission
                 </Link>
@@ -845,11 +845,11 @@ export const Home: React.FC = () => {
                     value={newsletterEmail}
                     onChange={(e) => setNewsletterEmail(e.target.value)}
                     placeholder="parent@example.com"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white/90 text-[#0B132B] text-xs placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#C5A880]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white/90 text-[#0B132B] text-xs placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2563EB]"
                   />
                   <button
                     type="submit"
-                    className="w-full py-2.5 rounded-xl bg-[#C5A880] hover:bg-[#B08E60] text-[#070C1A] text-xs font-serif font-bold transition-colors flex items-center justify-center gap-1.5 shadow"
+                    className="w-full py-2.5 rounded-xl bg-[#2563EB] hover:bg-[#1D4ED8] text-[#070C1A] text-xs font-serif font-bold transition-colors flex items-center justify-center gap-1.5 shadow"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>Subscribe to Gazette</span>

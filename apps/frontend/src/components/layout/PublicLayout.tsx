@@ -57,31 +57,31 @@ export const PublicLayout: React.FC = () => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#0F172A] font-sans selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#0F172A] font-sans selection:bg-[#2563EB] selection:text-white">
       {/* 1. Top Auxiliary Institutional Bar */}
       <div className="bg-[#070C1A] text-slate-300 text-[11px] py-2 px-4 border-b border-amber-900/20 font-medium">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-            <span className="flex items-center gap-1.5 hover:text-[#C5A880] transition-colors">
-              <Phone className="w-3 h-3 text-[#C5A880]" />
+            <span className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors">
+              <Phone className="w-3 h-3 text-[#2563EB]" />
               <span>Admissions: +91 120 4589200</span>
             </span>
-            <span className="hidden sm:flex items-center gap-1.5 hover:text-[#C5A880] transition-colors">
-              <Mail className="w-3 h-3 text-[#C5A880]" />
+            <span className="hidden sm:flex items-center gap-1.5 hover:text-[#2563EB] transition-colors">
+              <Mail className="w-3 h-3 text-[#2563EB]" />
               <span>admissions@greenwood.edu.in</span>
             </span>
             <span className="hidden md:flex items-center gap-1.5 text-slate-400">
-              <Clock className="w-3 h-3 text-[#C5A880]" />
+              <Clock className="w-3 h-3 text-[#2563EB]" />
               <span>Campus Hours: 8:00 AM – 3:30 PM (Mon–Sat)</span>
             </span>
           </div>
 
           <div className="flex items-center gap-4">
             <div className="flex items-center space-x-3 text-slate-400">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-[#C5A880] transition-colors"><Facebook className="w-3.5 h-3.5" /></a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-[#C5A880] transition-colors"><Twitter className="w-3.5 h-3.5" /></a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[#C5A880] transition-colors"><Instagram className="w-3.5 h-3.5" /></a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-[#C5A880] transition-colors"><Youtube className="w-3.5 h-3.5" /></a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-[#2563EB] transition-colors"><Facebook className="w-3.5 h-3.5" /></a>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-[#2563EB] transition-colors"><Twitter className="w-3.5 h-3.5" /></a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[#2563EB] transition-colors"><Instagram className="w-3.5 h-3.5" /></a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-[#2563EB] transition-colors"><Youtube className="w-3.5 h-3.5" /></a>
             </div>
             <div className="border-l border-slate-700/60 pl-3">
               <span className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-widest text-[#D4AF37] uppercase bg-amber-950/40 px-2.5 py-0.5 rounded border border-amber-800/40">
@@ -97,7 +97,7 @@ export const PublicLayout: React.FC = () => {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? 'bg-[#FAF8F5]/95 backdrop-blur-md shadow-md border-b border-[#E6DC run-test border-[#EDE4D6] py-3 text-[#0B132B]'
+            ? 'bg-[#FAF8F5]/95 backdrop-blur-md shadow-md border-b border-[#E2E8F0 border-[#EDE4D6] py-3 text-[#0B132B]'
             : isHomePage
             ? 'bg-gradient-to-b from-[#0B0F19]/90 to-transparent py-4 text-white'
             : 'bg-[#FAF8F5] border-b border-[#EDE4D6] py-4 text-[#0B132B]'
@@ -108,14 +108,14 @@ export const PublicLayout: React.FC = () => {
             {/* School Monogram & Crest Brand */}
             <Link to="/" className="flex items-center gap-3.5 group">
               {/* Crest Monogram */}
-              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#0B132B] to-[#1C2E52] border border-[#C5A880]/50 text-[#C5A880] flex items-center justify-center shadow-md group-hover:border-[#C5A880] transition-all flex-shrink-0">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#0B132B] to-[#1C2E52] border border-[#2563EB]/50 text-[#2563EB] flex items-center justify-center shadow-md group-hover:border-[#2563EB] transition-all flex-shrink-0">
                 <span className="font-serif font-black text-lg tracking-wider">GIA</span>
               </div>
               <div className="text-left">
                 <h1 className={`text-lg sm:text-xl font-serif font-bold tracking-tight leading-none ${isScrolled || !isHomePage ? 'text-[#0B132B]' : 'text-white'}`}>
                   GREENWOOD
                 </h1>
-                <p className={`text-[10px] font-bold uppercase tracking-[0.2em] mt-1 ${isScrolled || !isHomePage ? 'text-[#8E6E41]' : 'text-[#D4AF37]'}`}>
+                <p className={`text-[10px] font-bold uppercase tracking-[0.2em] mt-1 ${isScrolled || !isHomePage ? 'text-[#1E40AF]' : 'text-[#D4AF37]'}`}>
                   International Academy
                 </p>
               </div>
@@ -127,7 +127,7 @@ export const PublicLayout: React.FC = () => {
                 to="/"
                 className={({ isActive }) =>
                   `px-3.5 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    isActive ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    isActive ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`
                 }
               >
@@ -142,7 +142,7 @@ export const PublicLayout: React.FC = () => {
               >
                 <button
                   className={`inline-flex items-center gap-1 px-3.5 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    activeMegaMenu === 'about' ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    activeMegaMenu === 'about' ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`}
                 >
                   <span>About</span>
@@ -163,7 +163,7 @@ export const PublicLayout: React.FC = () => {
                       </div>
                       <Link
                         to="/about"
-                        className="text-xs font-bold text-[#C5A880] hover:text-white flex items-center gap-1 mt-4"
+                        className="text-xs font-bold text-[#2563EB] hover:text-white flex items-center gap-1 mt-4"
                       >
                         <span>Full Heritage</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -175,7 +175,7 @@ export const PublicLayout: React.FC = () => {
                         to="/about"
                         className="block p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors group"
                       >
-                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41] flex items-center gap-1.5">
+                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF] flex items-center gap-1.5">
                           <span>Institutional Overview</span>
                           <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </h5>
@@ -186,7 +186,7 @@ export const PublicLayout: React.FC = () => {
                         to="/principal-message"
                         className="block p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors group"
                       >
-                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41] flex items-center gap-1.5">
+                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF] flex items-center gap-1.5">
                           <span>From the Principal's Desk</span>
                           <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </h5>
@@ -197,7 +197,7 @@ export const PublicLayout: React.FC = () => {
                         to="/faculty"
                         className="block p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors group"
                       >
-                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41] flex items-center gap-1.5">
+                        <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF] flex items-center gap-1.5">
                           <span>Distinguished Faculty</span>
                           <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </h5>
@@ -216,7 +216,7 @@ export const PublicLayout: React.FC = () => {
               >
                 <button
                   className={`inline-flex items-center gap-1 px-3.5 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    activeMegaMenu === 'academics' ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    activeMegaMenu === 'academics' ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`}
                 >
                   <span>Academics</span>
@@ -241,25 +241,25 @@ export const PublicLayout: React.FC = () => {
 
                     <div className="col-span-7 grid grid-cols-2 gap-3">
                       <Link to="/academics" className="p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors">
-                        <span className="text-[10px] font-bold text-[#8E6E41] uppercase">Foundation</span>
+                        <span className="text-[10px] font-bold text-[#1E40AF] uppercase">Foundation</span>
                         <h5 className="text-xs font-bold text-[#0B132B] mt-0.5">Early Childhood</h5>
                         <p className="text-[10px] text-slate-500 mt-0.5">Pre-KG to UKG sensory learning.</p>
                       </Link>
 
                       <Link to="/academics" className="p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors">
-                        <span className="text-[10px] font-bold text-[#8E6E41] uppercase">Preparatory</span>
+                        <span className="text-[10px] font-bold text-[#1E40AF] uppercase">Preparatory</span>
                         <h5 className="text-xs font-bold text-[#0B132B] mt-0.5">Primary Wing</h5>
                         <p className="text-[10px] text-slate-500 mt-0.5">Grades 1 – 5 foundational inquiry.</p>
                       </Link>
 
                       <Link to="/academics" className="p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors">
-                        <span className="text-[10px] font-bold text-[#8E6E41] uppercase">Middle</span>
+                        <span className="text-[10px] font-bold text-[#1E40AF] uppercase">Middle</span>
                         <h5 className="text-xs font-bold text-[#0B132B] mt-0.5">Middle School</h5>
                         <p className="text-[10px] text-slate-500 mt-0.5">Grades 6 – 8 STEAM specialization.</p>
                       </Link>
 
                       <Link to="/academics" className="p-2.5 rounded-xl hover:bg-[#FAF8F5] transition-colors">
-                        <span className="text-[10px] font-bold text-[#8E6E41] uppercase">Senior</span>
+                        <span className="text-[10px] font-bold text-[#1E40AF] uppercase">Senior</span>
                         <h5 className="text-xs font-bold text-[#0B132B] mt-0.5">Secondary & Sr. Sec</h5>
                         <p className="text-[10px] text-slate-500 mt-0.5">Grades 9 – 12 Science & Commerce.</p>
                       </Link>
@@ -276,7 +276,7 @@ export const PublicLayout: React.FC = () => {
               >
                 <button
                   className={`inline-flex items-center gap-1 px-3.5 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    activeMegaMenu === 'campus' ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    activeMegaMenu === 'campus' ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`}
                 >
                   <span>Campus Life</span>
@@ -286,22 +286,22 @@ export const PublicLayout: React.FC = () => {
                 {activeMegaMenu === 'campus' && (
                   <div className="absolute -left-20 mt-1 w-[580px] bg-white rounded-2xl shadow-2xl border border-[#EDE4D6] p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150 grid grid-cols-2 gap-4 text-[#0B132B]">
                     <Link to="/facilities" className="p-3 rounded-xl hover:bg-[#FAF8F5] transition-colors border border-transparent hover:border-[#EDE4D6] group">
-                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41]">Smart Infrastructure</h5>
+                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF]">Smart Infrastructure</h5>
                       <p className="text-[11px] text-slate-500 mt-0.5">Interactive 4K flat panels, STEM labs, and sports arenas.</p>
                     </Link>
 
                     <Link to="/gallery" className="p-3 rounded-xl hover:bg-[#FAF8F5] transition-colors border border-transparent hover:border-[#EDE4D6] group">
-                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41]">Visual Gallery</h5>
+                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF]">Visual Gallery</h5>
                       <p className="text-[11px] text-slate-500 mt-0.5">Curated photographs of campus life, annual meets, and arts.</p>
                     </Link>
 
                     <Link to="/events" className="p-3 rounded-xl hover:bg-[#FAF8F5] transition-colors border border-transparent hover:border-[#EDE4D6] group">
-                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41]">Events & Calendar</h5>
+                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF]">Events & Calendar</h5>
                       <p className="text-[11px] text-slate-500 mt-0.5">Upcoming school activities, debates, sports meets, and PTMs.</p>
                     </Link>
 
                     <Link to="/news" className="p-3 rounded-xl hover:bg-[#FAF8F5] transition-colors border border-transparent hover:border-[#EDE4D6] group">
-                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#8E6E41]">Press & Bulletins</h5>
+                      <h5 className="text-xs font-bold text-[#0B132B] group-hover:text-[#1E40AF]">Press & Bulletins</h5>
                       <p className="text-[11px] text-slate-500 mt-0.5">Latest announcements, student achievements, and awards.</p>
                     </Link>
                   </div>
@@ -312,7 +312,7 @@ export const PublicLayout: React.FC = () => {
                 to="/facilities"
                 className={({ isActive }) =>
                   `px-3 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    isActive ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    isActive ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`
                 }
               >
@@ -323,7 +323,7 @@ export const PublicLayout: React.FC = () => {
                 to="/admissions"
                 className={({ isActive }) =>
                   `px-3 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    isActive ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    isActive ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`
                 }
               >
@@ -334,7 +334,7 @@ export const PublicLayout: React.FC = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   `px-3 py-2 text-xs font-bold tracking-wide transition-colors ${
-                    isActive ? 'text-[#C5A880]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#8E6E41]' : 'text-slate-200 hover:text-white'
+                    isActive ? 'text-[#2563EB]' : isScrolled || !isHomePage ? 'text-[#0B132B] hover:text-[#1E40AF]' : 'text-slate-200 hover:text-white'
                   }`
                 }
               >
@@ -354,7 +354,7 @@ export const PublicLayout: React.FC = () => {
                       : 'border-white/20 text-white hover:bg-white/10'
                   }`}
                 >
-                  <LogIn className="w-3.5 h-3.5 text-[#C5A880]" />
+                  <LogIn className="w-3.5 h-3.5 text-[#2563EB]" />
                   <span>Portal Login</span>
                   <ChevronDown className="w-3 h-3 opacity-60" />
                 </button>
@@ -365,34 +365,34 @@ export const PublicLayout: React.FC = () => {
                     onMouseLeave={() => setLoginDropdownOpen(false)}
                   >
                     <div className="px-3.5 py-1.5 border-b border-slate-100 mb-1">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-[#8E6E41]">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-[#1E40AF]">
                         Select Authorized Portal
                       </p>
                     </div>
                     <button
                       onClick={() => { setLoginDropdownOpen(false); navigate('/login?role=admin'); }}
-                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#8E6E41] flex items-center gap-2.5 font-medium"
+                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#1E40AF] flex items-center gap-2.5 font-medium"
                     >
-                      <ShieldCheck className="w-4 h-4 text-[#C5A880]" />
+                      <ShieldCheck className="w-4 h-4 text-[#2563EB]" />
                       <span>Admin & Principal Desk</span>
                     </button>
                     <button
                       onClick={() => { setLoginDropdownOpen(false); navigate('/login?role=teacher'); }}
-                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#8E6E41] flex items-center gap-2.5 font-medium"
+                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#1E40AF] flex items-center gap-2.5 font-medium"
                     >
                       <UserCheck className="w-4 h-4 text-indigo-600" />
                       <span>Faculty & Teacher Portal</span>
                     </button>
                     <button
                       onClick={() => { setLoginDropdownOpen(false); navigate('/login?role=parent'); }}
-                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#8E6E41] flex items-center gap-2.5 font-medium"
+                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#1E40AF] flex items-center gap-2.5 font-medium"
                     >
                       <Users className="w-4 h-4 text-emerald-600" />
                       <span>Parent Progress Portal</span>
                     </button>
                     <button
                       onClick={() => { setLoginDropdownOpen(false); navigate('/login?role=student'); }}
-                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#8E6E41] flex items-center gap-2.5 font-medium"
+                      className="w-full text-left px-4 py-2 text-xs text-[#0B132B] hover:bg-[#FAF8F5] hover:text-[#1E40AF] flex items-center gap-2.5 font-medium"
                     >
                       <BookOpen className="w-4 h-4 text-sky-600" />
                       <span>Student Academic Portal</span>
@@ -404,7 +404,7 @@ export const PublicLayout: React.FC = () => {
               {/* Luxury Admission CTA Button */}
               <Link
                 to="/online-enquiry"
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] hover:from-[#B08E60] hover:to-[#8E6E41] text-[#070C1A] text-xs font-serif font-bold shadow-md hover:shadow-lg transition-all tracking-wide"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#1E40AF] text-[#070C1A] text-xs font-serif font-bold shadow-md hover:shadow-lg transition-all tracking-wide"
               >
                 Apply for Admission
               </Link>
@@ -414,7 +414,7 @@ export const PublicLayout: React.FC = () => {
             <div className="lg:hidden flex items-center gap-2">
               <Link
                 to="/online-enquiry"
-                className="px-3 py-1.5 text-xs font-serif font-bold bg-[#C5A880] text-[#070C1A] rounded-lg"
+                className="px-3 py-1.5 text-xs font-serif font-bold bg-[#2563EB] text-[#070C1A] rounded-lg"
               >
                 Apply
               </Link>
@@ -448,7 +448,7 @@ export const PublicLayout: React.FC = () => {
               <Link
                 to="/online-enquiry"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full py-3 text-center rounded-xl bg-[#C5A880] text-[#070C1A] text-xs font-serif font-bold shadow"
+                className="w-full py-3 text-center rounded-xl bg-[#2563EB] text-[#070C1A] text-xs font-serif font-bold shadow"
               >
                 Apply for Admission 2026-27
               </Link>
@@ -476,7 +476,7 @@ export const PublicLayout: React.FC = () => {
             {/* Col 1: Brand & Heritage */}
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-[#0B132B] border border-[#C5A880]/60 text-[#C5A880] flex items-center justify-center font-serif font-bold text-lg">
+                <div className="w-11 h-11 rounded-xl bg-[#0B132B] border border-[#2563EB]/60 text-[#2563EB] flex items-center justify-center font-serif font-bold text-lg">
                   GIA
                 </div>
                 <div>
@@ -490,10 +490,10 @@ export const PublicLayout: React.FC = () => {
                 Established in 1998, Greenwood International Academy is a premier CBSE day and residential institution committed to intellectual inquiry, moral character, and global leadership.
               </p>
               <div className="flex items-center space-x-3 text-slate-400 pt-2">
-                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#C5A880] hover:text-[#070C1A] transition-colors"><Facebook className="w-4 h-4" /></a>
-                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#C5A880] hover:text-[#070C1A] transition-colors"><Twitter className="w-4 h-4" /></a>
-                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#C5A880] hover:text-[#070C1A] transition-colors"><Instagram className="w-4 h-4" /></a>
-                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#C5A880] hover:text-[#070C1A] transition-colors"><Youtube className="w-4 h-4" /></a>
+                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#2563EB] hover:text-[#070C1A] transition-colors"><Facebook className="w-4 h-4" /></a>
+                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#2563EB] hover:text-[#070C1A] transition-colors"><Twitter className="w-4 h-4" /></a>
+                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#2563EB] hover:text-[#070C1A] transition-colors"><Instagram className="w-4 h-4" /></a>
+                <a href="#" className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#2563EB] hover:text-[#070C1A] transition-colors"><Youtube className="w-4 h-4" /></a>
               </div>
             </div>
 
@@ -519,7 +519,7 @@ export const PublicLayout: React.FC = () => {
                 <li><Link to="/academics" className="hover:text-white transition-colors">Middle School (Grades 6 – 8)</Link></li>
                 <li><Link to="/academics" className="hover:text-white transition-colors">Secondary CBSE (Grades 9 & 10)</Link></li>
                 <li><Link to="/academics" className="hover:text-white transition-colors">Senior Secondary (Sci & Comm)</Link></li>
-                <li><Link to="/online-enquiry" className="text-[#C5A880] font-bold hover:underline">Admission Enquiry 2026-27 →</Link></li>
+                <li><Link to="/online-enquiry" className="text-[#2563EB] font-bold hover:underline">Admission Enquiry 2026-27 →</Link></li>
               </ul>
             </div>
 
@@ -528,15 +528,15 @@ export const PublicLayout: React.FC = () => {
               <h3 className="text-xs font-serif font-bold text-[#D4AF37] uppercase tracking-widest mb-4">Admissions & Campus</h3>
               <ul className="space-y-3 text-xs text-slate-300">
                 <li className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[#C5A880] flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-[#2563EB] flex-shrink-0 mt-0.5" />
                   <span>Plot 14, Institutional Area, Sector 62, Noida, NCR, UP 201309</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <Phone className="w-4 h-4 text-[#C5A880] flex-shrink-0" />
+                  <Phone className="w-4 h-4 text-[#2563EB] flex-shrink-0" />
                   <span>+91 120 4589200 / +91 98101 12233</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <Mail className="w-4 h-4 text-[#C5A880] flex-shrink-0" />
+                  <Mail className="w-4 h-4 text-[#2563EB] flex-shrink-0" />
                   <span>info@greenwood.edu.in</span>
                 </li>
                 <li className="pt-2">
@@ -554,7 +554,7 @@ export const PublicLayout: React.FC = () => {
             <div className="flex items-center space-x-6">
               <Link to="/about" className="hover:text-slate-400">Governance</Link>
               <Link to="/contact" className="hover:text-slate-400">Campus Tour</Link>
-              <Link to="/login" className="hover:text-[#C5A880] font-bold">Authorized Portal Login</Link>
+              <Link to="/login" className="hover:text-[#2563EB] font-bold">Authorized Portal Login</Link>
             </div>
           </div>
         </div>

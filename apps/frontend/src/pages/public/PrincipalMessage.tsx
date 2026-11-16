@@ -15,11 +15,11 @@ import {
 
 export const PrincipalMessage: React.FC = () => {
   return (
-    <div className="bg-[#FAF8F5] min-h-screen text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="bg-[#FAF8F5] min-h-screen text-[#0F172A] selection:bg-[#2563EB] selection:text-white">
       {/* Editorial Hero Banner */}
       <section className="bg-[#070C1A] text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative z-10 text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#2563EB]/30 backdrop-blur-md">
             <Award className="w-3.5 h-3.5" /> Leadership & Vision
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-white">
@@ -65,11 +65,11 @@ export const PrincipalMessage: React.FC = () => {
                 <p className="text-[10px] uppercase tracking-wider text-slate-400 font-bold">Key Accolades</p>
                 <ul className="space-y-1 mt-1 text-slate-600 font-medium">
                   <li className="flex items-center gap-1.5">
-                    <Star className="w-3.5 h-3.5 text-[#C5A880]" />
+                    <Star className="w-3.5 h-3.5 text-[#2563EB]" />
                     <span>National Best Educator Award (CBSE)</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Star className="w-3.5 h-3.5 text-[#C5A880]" />
+                    <Star className="w-3.5 h-3.5 text-[#2563EB]" />
                     <span>Global Educational Leadership Fellow</span>
                   </li>
                 </ul>
@@ -78,7 +78,7 @@ export const PrincipalMessage: React.FC = () => {
               <div className="pt-2">
                 <Link
                   to="/online-enquiry"
-                  className="w-full py-3 bg-[#C5A880] hover:bg-[#B08E60] text-[#070C1A] font-serif font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow transition-all"
+                  className="w-full py-3 bg-[#2563EB] hover:bg-[#1D4ED8] text-[#070C1A] font-serif font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow transition-all"
                 >
                   <span>Book Interactive Session</span>
                   <ArrowRight className="w-4 h-4" />
@@ -89,7 +89,7 @@ export const PrincipalMessage: React.FC = () => {
 
           {/* Detailed Message Prose */}
           <div className="lg:col-span-8 space-y-6 bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-[#EDE4D6]">
-            <div className="flex items-center gap-2 text-[#8E6E41]">
+            <div className="flex items-center gap-2 text-[#1E40AF]">
               <Quote className="w-10 h-10 opacity-30 rotate-180" />
               <span className="text-xs font-serif font-bold uppercase tracking-[0.2em]">
                 A Personal Welcome to Parents & Scholars
@@ -119,7 +119,7 @@ export const PrincipalMessage: React.FC = () => {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-[#FAF8F5] border border-[#EDE4D6]">
-                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#8E6E41] flex items-center justify-center font-bold mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#1E40AF] flex items-center justify-center font-bold mb-2">
                     <BookOpen className="w-4 h-4" />
                   </div>
                   <h4 className="font-serif text-xs font-bold text-[#0B132B]">Academic Excellence</h4>
@@ -129,7 +129,7 @@ export const PrincipalMessage: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FAF8F5] border border-[#EDE4D6]">
-                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#8E6E41] flex items-center justify-center font-bold mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#1E40AF] flex items-center justify-center font-bold mb-2">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <h4 className="font-serif text-xs font-bold text-[#0B132B]">Safe & Inclusive Campus</h4>
@@ -139,7 +139,7 @@ export const PrincipalMessage: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FAF8F5] border border-[#EDE4D6]">
-                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#8E6E41] flex items-center justify-center font-bold mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#1E40AF] flex items-center justify-center font-bold mb-2">
                     <Heart className="w-4 h-4" />
                   </div>
                   <h4 className="font-serif text-xs font-bold text-[#0B132B]">Emotional Well-Being</h4>
@@ -149,7 +149,7 @@ export const PrincipalMessage: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FAF8F5] border border-[#EDE4D6]">
-                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#8E6E41] flex items-center justify-center font-bold mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-[#1E40AF] flex items-center justify-center font-bold mb-2">
                     <GraduationCap className="w-4 h-4" />
                   </div>
                   <h4 className="font-serif text-xs font-bold text-[#0B132B]">Future-Ready Skills</h4>
@@ -165,7 +165,7 @@ export const PrincipalMessage: React.FC = () => {
               <div>
                 <p className="font-serif text-sm font-bold text-[#0B132B]">Dr. Sunita Sharma</p>
                 <p className="text-xs text-slate-500">Principal, Greenwood International Academy</p>
-                <p className="text-[11px] text-[#8E6E41] font-semibold mt-0.5">principal@greenwood.edu.in</p>
+                <p className="text-[11px] text-[#1E40AF] font-semibold mt-0.5">principal@greenwood.edu.in</p>
               </div>
 
               <Link

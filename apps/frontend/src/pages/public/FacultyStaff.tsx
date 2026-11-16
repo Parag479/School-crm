@@ -124,11 +124,11 @@ export const FacultyStaff: React.FC = () => {
   });
 
   return (
-    <div className="bg-[#FAF8F5] min-h-screen text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="bg-[#FAF8F5] min-h-screen text-[#0F172A] selection:bg-[#2563EB] selection:text-white">
       {/* Editorial Banner */}
       <section className="bg-[#070C1A] text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative z-10 text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#2563EB]/30 backdrop-blur-md">
             <Users className="w-3.5 h-3.5" /> Academic Mentors
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-white">
@@ -168,7 +168,7 @@ export const FacultyStaff: React.FC = () => {
               placeholder="Search faculty by name, subject..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-3.5 py-2 rounded-xl border border-[#EDE4D6] text-xs focus:ring-2 focus:ring-[#C5A880] focus:outline-none bg-[#FAF8F5]"
+              className="w-full pl-9 pr-3.5 py-2 rounded-xl border border-[#EDE4D6] text-xs focus:ring-2 focus:ring-[#2563EB] focus:outline-none bg-[#FAF8F5]"
             />
           </div>
         </div>
@@ -193,18 +193,18 @@ export const FacultyStaff: React.FC = () => {
 
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="font-serif font-bold text-base text-[#0B132B] leading-tight group-hover:text-[#8E6E41] transition-colors">
+                    <h3 className="font-serif font-bold text-base text-[#0B132B] leading-tight group-hover:text-[#1E40AF] transition-colors">
                       {teacher.name}
                     </h3>
-                    <p className="text-xs font-semibold text-[#8E6E41] mt-0.5">{teacher.role}</p>
+                    <p className="text-xs font-semibold text-[#1E40AF] mt-0.5">{teacher.role}</p>
 
                     <div className="mt-3 space-y-1.5 text-[11px] text-slate-600 border-t border-slate-100 pt-3">
                       <p className="flex items-center gap-1.5">
-                        <GraduationCap className="w-3.5 h-3.5 text-[#C5A880] flex-shrink-0" />
+                        <GraduationCap className="w-3.5 h-3.5 text-[#2563EB] flex-shrink-0" />
                         <span className="truncate">{teacher.qualification}</span>
                       </p>
                       <p className="flex items-center gap-1.5">
-                        <Briefcase className="w-3.5 h-3.5 text-[#C5A880] flex-shrink-0" />
+                        <Briefcase className="w-3.5 h-3.5 text-[#2563EB] flex-shrink-0" />
                         <span>{teacher.experience} Experience</span>
                       </p>
                     </div>
@@ -217,7 +217,7 @@ export const FacultyStaff: React.FC = () => {
                   <div className="pt-2">
                     <Link
                       to="/online-enquiry"
-                      className="w-full py-2 text-center text-xs font-serif font-bold text-[#8E6E41] hover:text-[#0B132B] bg-[#FAF8F5] hover:bg-[#F2ECE2] rounded-xl block transition-colors border border-[#EDE4D6]"
+                      className="w-full py-2 text-center text-xs font-serif font-bold text-[#1E40AF] hover:text-[#0B132B] bg-[#FAF8F5] hover:bg-[#F2ECE2] rounded-xl block transition-colors border border-[#EDE4D6]"
                     >
                       Connect with Faculty →
                     </Link>
@@ -234,22 +234,22 @@ export const FacultyStaff: React.FC = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="p-4">
             <p className="font-serif text-3xl sm:text-4xl font-bold text-[#0B132B]">85+</p>
-            <p className="text-xs font-serif font-bold text-[#8E6E41] uppercase tracking-wider mt-1">Postgraduate Faculty</p>
+            <p className="text-xs font-serif font-bold text-[#1E40AF] uppercase tracking-wider mt-1">Postgraduate Faculty</p>
             <p className="text-[11px] text-slate-500 mt-0.5">100% B.Ed. & Masters qualified</p>
           </div>
           <div className="p-4">
-            <p className="font-serif text-3xl sm:text-4xl font-bold text-[#C5A880]">1:16</p>
-            <p className="text-xs font-serif font-bold text-[#8E6E41] uppercase tracking-wider mt-1">Faculty-Student Ratio</p>
+            <p className="font-serif text-3xl sm:text-4xl font-bold text-[#2563EB]">1:16</p>
+            <p className="text-xs font-serif font-bold text-[#1E40AF] uppercase tracking-wider mt-1">Faculty-Student Ratio</p>
             <p className="text-[11px] text-slate-500 mt-0.5">Individual mentoring focus</p>
           </div>
           <div className="p-4">
             <p className="font-serif text-3xl sm:text-4xl font-bold text-[#0B132B]">12+ Yrs</p>
-            <p className="text-xs font-serif font-bold text-[#8E6E41] uppercase tracking-wider mt-1">Average Experience</p>
+            <p className="text-xs font-serif font-bold text-[#1E40AF] uppercase tracking-wider mt-1">Average Experience</p>
             <p className="text-[11px] text-slate-500 mt-0.5">Senior CBSE evaluators</p>
           </div>
           <div className="p-4">
-            <p className="font-serif text-3xl sm:text-4xl font-bold text-[#C5A880]">100 hrs</p>
-            <p className="text-xs font-serif font-bold text-[#8E6E41] uppercase tracking-wider mt-1">Annual Faculty Training</p>
+            <p className="font-serif text-3xl sm:text-4xl font-bold text-[#2563EB]">100 hrs</p>
+            <p className="text-xs font-serif font-bold text-[#1E40AF] uppercase tracking-wider mt-1">Annual Faculty Training</p>
             <p className="text-[11px] text-slate-500 mt-0.5">NEP 2020 workshops</p>
           </div>
         </div>
