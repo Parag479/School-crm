@@ -47,3 +47,4 @@ export const StudentCreateSchema = z.object({
 });
 
 export type StudentCreateInput = z.infer<typeof StudentCreateSchema>;
+

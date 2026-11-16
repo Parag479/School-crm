@@ -348,3 +348,4 @@ export const Book3DViewer: React.FC = () => {
     </div>
   );
 };
+
