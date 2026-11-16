@@ -31,6 +31,7 @@ import {
 import { api } from '../../services/api';
 import { School3DHeroCanvas } from '../../components/common/School3DHeroCanvas';
 import { Card3DTilt } from '../../components/common/Card3DTilt';
+import { Book3DViewer } from '../../components/common/Book3DViewer';
 
 export const Home: React.FC = () => {
   const [data, setData] = useState<any>(null);
@@ -62,91 +63,122 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="space-y-24 sm:space-y-32 pb-20 overflow-hidden bg-[#FAF8F5] text-[#0F172A] selection:bg-[#C5A880] selection:text-[#0B132B]">
+    <div className="space-y-24 sm:space-y-32 pb-20 overflow-hidden bg-[#FAF9F5] text-[#050B18] selection:bg-[#D4AF37] selection:text-[#050B18]">
       {/* ========================================================
           1. HERO SECTION: "Shaping Minds. Inspiring Futures."
+          With Interactive 3D Open Academic Book Experience
          ======================================================== */}
-      <section className="relative min-h-[92vh] lg:min-h-[96vh] bg-[#070C1A] text-white flex items-center justify-center overflow-hidden">
-        {/* Full-width editorial high-resolution campus photography with rich dark overlay */}
+      <section className="relative min-h-[92vh] lg:min-h-[98vh] bg-[#050B18] text-white flex items-center justify-center overflow-hidden">
+        {/* Full-width editorial high-resolution campus photography with deep royal obsidian overlay */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=85&w=1920"
             alt="Greenwood International Academy Campus"
-            className="w-full h-full object-cover object-center scale-105 filter brightness-[0.38] contrast-[1.05]"
+            className="w-full h-full object-cover object-center scale-105 filter brightness-[0.25] contrast-[1.1]"
           />
-          {/* Subtle vignette and dark gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070C1A] via-[#070C1A]/40 to-[#070C1A]/70" />
+          {/* Subtle vignette and luxury imperial navy gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050B18] via-[#0A1435]/70 to-[#050B18]/90" />
         </div>
 
-        {/* Floating Interactive 3D Canvas in background */}
-        <div className="absolute inset-0 z-1 pointer-events-none opacity-40 mix-blend-screen hidden lg:block">
-          <School3DHeroCanvas />
-        </div>
+        {/* Ambient Warm Golden & Sapphire Light Orbs */}
+        <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#D4AF37]/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#38BDF8]/10 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Content Container */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center py-24 sm:py-32 space-y-8">
-          {/* Accreditation Emblem */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#D4AF37] text-[11px] font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 backdrop-blur-md shadow-lg animate-in fade-in duration-700">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Admissions 2026–2027 • CBSE Affiliation No. 2130842</span>
-          </div>
+        {/* Content Container (2-Column Editorial Grid on Desktop) */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 sm:py-28 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left 7 Columns: Editorial Headline & Luxury Accolades */}
+            <div className="lg:col-span-7 space-y-7 text-left">
+              {/* Accreditation Emblem */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#D4AF37] text-[11px] font-bold uppercase tracking-[0.22em] border border-[#D4AF37]/35 backdrop-blur-md shadow-lg">
+                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>Admissions 2026–2027 • CBSE Affiliation No. 2130842</span>
+              </div>
 
-          {/* Master Headline: Shaping Minds. Inspiring Futures. */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.1] max-w-4xl mx-auto">
-            Shaping Minds.{' '}
-            <span className="italic font-normal bg-gradient-to-r from-[#D4AF37] via-[#C5A880] to-[#EBDDC9] bg-clip-text text-transparent">
-              Inspiring Futures.
-            </span>
-          </h1>
+              {/* Master Headline: Shaping Minds. Inspiring Futures. */}
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.08]">
+                Shaping Minds.{' '}
+                <span className="italic font-normal bg-gradient-to-r from-[#F5E6C4] via-[#D4AF37] to-[#BF9827] bg-clip-text text-transparent">
+                  Inspiring Futures.
+                </span>
+              </h1>
 
-          {/* Supporting Narrative */}
-          <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
-            An environment where curiosity thrives, potential grows, and every student is inspired to achieve excellence.
-          </p>
+              {/* Supporting Narrative */}
+              <p className="text-base sm:text-xl text-slate-200 font-light leading-relaxed max-w-xl">
+                An institution of rare distinction where academic rigor meets timeless values, unlocking each student’s highest potential on the global stage.
+              </p>
 
-          {/* Luxury CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Link
-              to="/about"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#C5A880] to-[#B08E60] text-[#070C1A] font-serif font-bold text-sm tracking-wide shadow-xl hover:shadow-[#C5A880]/20 hover:from-[#D4AF37] hover:to-[#C5A880] transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
-            >
-              <span>Discover Our School</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+              {/* Luxury CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                <Link
+                  to="/online-enquiry"
+                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#BF9827] to-[#997523] text-[#050B18] font-serif font-bold text-sm tracking-wide shadow-xl shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:from-[#E4BF6E] hover:to-[#D4AF37] transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                >
+                  <span>Apply for Admission</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
 
-            <Link
-              to="/online-enquiry"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-serif font-semibold text-sm tracking-wide backdrop-blur-md border border-white/20 hover:border-[#C5A880]/50 transition-all text-center"
-            >
-              Explore Admissions
-            </Link>
-          </div>
+                <Link
+                  to="/about"
+                  className="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-serif font-semibold text-sm tracking-wide backdrop-blur-md border border-white/20 hover:border-[#D4AF37]/50 transition-all text-center flex items-center justify-center gap-2"
+                >
+                  <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+                  <span>Discover Our Legacy</span>
+                </Link>
+              </div>
 
-          {/* Institutional Accolade Plaque */}
-          <div className="pt-12 sm:pt-16 border-t border-white/15 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">28 Years</p>
-              <p className="text-[11px] font-medium text-slate-400 uppercase tracking-widest mt-1">Excellence Legacy</p>
+              {/* Institutional Accolade Plaque */}
+              <div className="pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                <div>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">28+ Years</p>
+                  <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">Excellence Legacy</p>
+                </div>
+                <div>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-white">100%</p>
+                  <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">CBSE Distinction</p>
+                </div>
+                <div>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">1:12</p>
+                  <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">Faculty Mentorship</p>
+                </div>
+                <div>
+                  <p className="font-serif text-2xl sm:text-3xl font-bold text-white">2,500+</p>
+                  <p className="text-[10px] sm:text-[11px] font-medium text-slate-300 uppercase tracking-widest mt-1">Global Scholars</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="font-serif text-2xl sm:text-3xl font-bold text-white">100%</p>
-              <p className="text-[11px] font-medium text-slate-400 uppercase tracking-widest mt-1">CBSE Distinction</p>
-            </div>
-            <div>
-              <p className="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37]">1:16</p>
-              <p className="text-[11px] font-medium text-slate-400 uppercase tracking-widest mt-1">Faculty Mentorship</p>
-            </div>
-            <div>
-              <p className="font-serif text-2xl sm:text-3xl font-bold text-white">2,500+</p>
-              <p className="text-[11px] font-medium text-slate-400 uppercase tracking-widest mt-1">Scholars & Leaders</p>
+
+            {/* Right 5 Columns: Interactive 3D Open Academic Book Viewport */}
+            <div className="lg:col-span-5 relative flex items-center justify-center">
+              <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-[#D4AF37]/30 backdrop-blur-xl p-2 sm:p-4 shadow-2xl overflow-hidden group">
+                {/* 3D Book Interactive Canvas */}
+                <School3DHeroCanvas className="w-full h-full" />
+
+                {/* Floating Interactive Badge */}
+                <div className="absolute top-4 left-4 z-20 pointer-events-none">
+                  <div className="px-3 py-1.5 rounded-full bg-[#050B18]/80 border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] font-bold uppercase tracking-wider backdrop-blur-md flex items-center gap-1.5 shadow-md">
+                    <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
+                    <span>Interactive 3D Book • Move Cursor to Tilt</span>
+                  </div>
+                </div>
+
+                {/* Bottom Stats Ribbon */}
+                <div className="absolute bottom-4 left-4 right-4 z-20 pointer-events-none flex items-center justify-between px-4 py-2 rounded-xl bg-[#050B18]/70 border border-white/10 backdrop-blur-md text-[11px] text-slate-300">
+                  <span className="flex items-center gap-1.5 text-[#D4AF37] font-semibold">
+                    <Award className="w-3.5 h-3.5" />
+                    CBSE & Cambridge
+                  </span>
+                  <span className="text-slate-400">Holistic Pedagogy</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Subtle Scroll Indicator */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-slate-400 flex flex-col items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
-          <span className="text-[10px] font-bold uppercase tracking-[0.25em]">Scroll to Discover</span>
-          <ChevronDown className="w-4 h-4 animate-bounce" />
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 text-slate-400 flex flex-col items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
+          <span className="text-[9px] font-bold uppercase tracking-[0.25em]">Scroll to Discover</span>
+          <ChevronDown className="w-3.5 h-3.5 animate-bounce" />
         </div>
       </section>
 
@@ -230,6 +262,13 @@ export const Home: React.FC = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* ========================================================
+          INTERACTIVE 3D PROSPECTUS BOOK VIEWER
+         ======================================================== */}
+      <section className="bg-gradient-to-b from-[#FAF9F5] via-[#F4EFE6] to-[#FAF9F5] py-8 sm:py-12 border-t border-[#E5D7B7]">
+        <Book3DViewer />
       </section>
 
       {/* ========================================================

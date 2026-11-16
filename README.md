@@ -1,6 +1,25 @@
 # EduManage School ERP — World-Class School Website & Management CRM
 
-A modern, full-stack, AI-powered School Management Platform and luxury institution website built for Indian and international educational institutions (CBSE / ICSE / Cambridge / State Boards).
+[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel%20Deployment-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://school-crm.vercel.app)
+[![React 18](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Three.js](https://img.shields.io/badge/Three.js-3D%20Book%20Engine-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%203.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
+> **Live Website:** [https://school-crm.vercel.app](https://school-crm.vercel.app) *(or your deployed Vercel domain)*  
+> **GitHub Repository:** [https://github.com/Parag479/School-crm](https://github.com/Parag479/School-crm)
+
+---
+
+### 🔑 Demo Login Credentials
+
+| Role | Email | Password | Direct Portal |
+| :--- | :--- | :--- | :--- |
+| **Super Admin** | `admin@greenwood.edu` | `Admin@123` | `/admin` |
+| **Faculty / Teacher** | `teacher@greenwood.edu` | `Teacher@123` | `/portal/teacher` |
+| **Parent** | `parent@greenwood.edu` | `Parent@123` | `/portal/parent` |
+| **Student** | `student@greenwood.edu` | `Student@123` | `/portal/student` |
+| **Chief Accountant** | `accountant@greenwood.edu` | `Accountant@123` | `/portal/accountant` |
 
 ---
 
