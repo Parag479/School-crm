@@ -55,6 +55,7 @@ export const mockDashboard = {
     recentEnquiries: [
       {
         id: 'adm-001',
+        enquiryNumber: 'ENQ-2026-0042',
         studentName: 'Vihaan Sharma',
         parentName: 'Rajesh Sharma',
         phone: '+91 98112 34567',
@@ -66,6 +67,7 @@ export const mockDashboard = {
       },
       {
         id: 'adm-002',
+        enquiryNumber: 'ENQ-2026-0043',
         studentName: 'Ananya Deshmukh',
         parentName: 'Sanjay Deshmukh',
         phone: '+91 98223 45678',
@@ -77,6 +79,7 @@ export const mockDashboard = {
       },
       {
         id: 'adm-003',
+        enquiryNumber: 'ENQ-2026-0044',
         studentName: 'Kabir Mehta',
         parentName: 'Pooja Mehta',
         phone: '+91 98334 56789',
@@ -92,7 +95,8 @@ export const mockDashboard = {
         id: 'inv-001',
         invoiceNumber: 'INV-2026-0891',
         studentName: 'Arjun Verma',
-        className: 'Class 10-A',
+        className: 'Class 10',
+        sectionName: 'A',
         amount: 32000,
         balanceAmount: 16000,
         status: 'PARTIAL',
@@ -102,7 +106,8 @@ export const mockDashboard = {
         id: 'inv-002',
         invoiceNumber: 'INV-2026-0892',
         studentName: 'Rhea Sen',
-        className: 'Class 8-B',
+        className: 'Class 8',
+        sectionName: 'B',
         amount: 28000,
         balanceAmount: 28000,
         status: 'PENDING',
@@ -401,3 +406,4 @@ export function getMockResponse(url: string = '', method: string = 'GET', data?:
   // Default fallback for any other entity
   return { success: true, data: [] };
 }
+

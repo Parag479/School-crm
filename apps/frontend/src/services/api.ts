@@ -18,7 +18,27 @@ api.interceptors.request.use((config) => {
 });
 
 api.interceptors.response.use(
-  (response) => response.data,
+  (response) => {
+    const resData = response.data;
+
+    // Vercel SPA rewrite returns 200 OK with HTML for all routes including /api/v1/*
+    // Detect this and serve mock data instead so the dashboard and other pages work
+    if (
+      typeof resData === 'string' &&
+      (resData.trim().startsWith('<!') || resData.trim().startsWith('<html'))
+    ) {
+      const url = response.config?.url || '';
+      const method = response.config?.method || 'get';
+      let reqData = response.config?.data;
+      try {
+        if (typeof reqData === 'string') reqData = JSON.parse(reqData);
+      } catch {}
+      console.warn(`[EduManage API Fallback] HTML response detected for ${method.toUpperCase()} ${url}, serving mock data`);
+      return getMockResponse(url, method, reqData);
+    }
+
+    return resData;
+  },
   (error) => {
     const url = error.config?.url || '';
     const method = error.config?.method || 'get';

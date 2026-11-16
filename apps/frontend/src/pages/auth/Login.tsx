@@ -133,10 +133,16 @@ export const Login: React.FC = () => {
       // 1-Click Demo role fallback for presentation
       const roleMap: Record<string, { role: any; name: string }> = {
         ADMIN: { role: 'ADMIN', name: 'Dr. Sunita Sharma (Admin)' },
+        superadmin: { role: 'SUPER_ADMIN', name: 'Trust Chairman (Super Admin)' },
+        principal: { role: 'ADMIN', name: 'Dr. Sunita Sharma (Principal)' },
         TEACHER: { role: 'TEACHER', name: 'Dr. Rajesh Verma (Faculty)' },
+        teacher: { role: 'TEACHER', name: 'Dr. Rajesh Verma (Faculty)' },
         PARENT: { role: 'PARENT', name: 'Vikram Malhotra (Parent)' },
+        parent: { role: 'PARENT', name: 'Vikram Malhotra (Parent)' },
         STUDENT: { role: 'STUDENT', name: 'Aarav Sharma (Class 10-A)' },
         ACCOUNTANT: { role: 'ACCOUNTANT', name: 'Ramesh Kumar (Accountant)' },
+        accountant: { role: 'ACCOUNTANT', name: 'Ramesh Kumar (Accountant)' },
+        receptionist: { role: 'ADMISSION_OFFICER', name: 'Sunita Rao (Admissions)' },
       };
       const found = roleMap[roleKey] || { role: 'ADMIN', name: 'Administrator' };
       const mockUser = {

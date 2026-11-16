@@ -54,7 +54,8 @@ export const AdminDashboard: React.FC = () => {
     setAiLoading(true);
     try {
       const res: any = await api.post('/ai/executive-summary', {});
-      setAiSummary(res.data?.data || res.data);
+      const aiData = res?.data?.highlights ? res.data : res?.highlights ? res : res?.data;
+      setAiSummary(aiData);
     } catch (e) {
       // Fallback structured briefing
       setAiSummary({
@@ -82,7 +83,13 @@ export const AdminDashboard: React.FC = () => {
   useEffect(() => {
     api
       .get('/dashboard')
-      .then((res: any) => setData(res.data))
+      .then((res: any) => {
+        // res may be the full wrapper { success, data } or the unwrapped dashboard data directly
+        const dashboard = res?.data?.stats ? res.data : res?.stats ? res : null;
+        if (dashboard) {
+          setData(dashboard);
+        }
+      })
       .catch(() => {})
       .finally(() => setLoading(false));
 
