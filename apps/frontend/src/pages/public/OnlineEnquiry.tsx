@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { AdmissionEnquirySchema, AdmissionEnquiryInput } from '@edumanage/validation';
+import { AdmissionEnquirySchema, AdmissionEnquiryInput } from '../../utils/validation';
 import { api } from '../../services/api';
 import { CheckCircle2, Upload, FileText, ArrowLeft, Send, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { LoginSchema, LoginInput } from '@edumanage/validation';
+import { LoginSchema, LoginInput } from '../../utils/validation';
 import { api } from '../../services/api';
 import { useAuthStore } from '../../store/useAuthStore';
 import {
