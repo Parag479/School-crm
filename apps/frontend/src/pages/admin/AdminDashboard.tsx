@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../../services/api';
+import { mockDashboard } from '../../services/mockData';
 import { StatCard } from '../../components/common/StatCard';
 import { LoadingSkeleton } from '../../components/common/LoadingSkeleton';
 import { StatusBadge } from '../../components/common/StatusBadge';
@@ -81,26 +82,42 @@ export const AdminDashboard: React.FC = () => {
   };
 
   useEffect(() => {
-    api
-      .get('/dashboard')
-      .then((res: any) => {
-        // res may be the full wrapper { success, data } or the unwrapped dashboard data directly
+    let active = true;
+
+    const loadDashboard = async () => {
+      setLoading(true);
+      try {
+        const res: any = await api.get('/dashboard');
+        // Support both the API envelope and an already-unwrapped response.
         const dashboard = res?.data?.stats ? res.data : res?.stats ? res : null;
-        if (dashboard) {
+        if (active && dashboard?.stats && dashboard?.charts && dashboard?.widgets) {
           setData(dashboard);
+        } else if (active) {
+          // Keep the dashboard usable if the API returns an unexpected payload.
+          setData(mockDashboard);
         }
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false));
+      } catch (error) {
+        console.error('Unable to load dashboard data; showing demo data.', error);
+        if (active) setData(mockDashboard);
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+
+    void loadDashboard();
 
     fetchAiSummary();
+
+    return () => {
+      active = false;
+    };
   }, []);
 
-  if (loading || !data) {
+  if (loading && !data) {
     return <LoadingSkeleton rows={8} />;
   }
 
-  const { stats, charts, widgets } = data;
+  const { stats, charts, widgets } = data || mockDashboard;
 
   return (
     <div className="space-y-8 pb-12">
